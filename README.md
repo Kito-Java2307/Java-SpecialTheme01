@@ -1,6 +1,6 @@
 ## Java-SpecialTheme01【Webに関する知識】
 # **URLとは**
-URL（Uniform Resource Locator）。インターネット上のホームページ（Webサイト）やファイルの位置や情報を示します。インターネット上の住所とも言え、アドレスとも呼びます。
+URL（Uniform Resource Locator）。  インターネット上のホームページ（Webサイト）やファイルの位置や情報を示します。インターネット上の住所とも言え、アドレスとも呼びます。
 ### ＜URLの確認＞
 ブラウザ（Webサイト閲覧のためのソフトウェア）にて通常画面上部のアドレスバーに記載されている文字列がURLです。
 <img src="https://github.com/Kito-Java2307/Java-SpecialTheme01/assets/141001192/7f3468c7-637d-4aaa-9f71-57b9cefee7a3" width=750px>
