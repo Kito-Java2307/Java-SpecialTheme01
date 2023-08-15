@@ -1,75 +1,64 @@
 ## Java-SpecialTheme01【Webに関する知識】
 # **URLとは**
-URL（Uniform Resource Locator）。  インターネット上のホームページ（Webサイト）やファイルの位置や情報を示します。インターネット上の住所とも言え、アドレスとも呼びます。
+URL（Uniform Resource Locator）。<br>
+インターネット上のホームページ（Webサイト）やファイルの位置や情報を示します。インターネット上の住所とも言え、アドレスとも呼びます。
 ### ＜URLの確認＞
 ブラウザ（Webサイト閲覧のためのソフトウェア）にて通常画面上部のアドレスバーに記載されている文字列がURLです。
 <img src="https://github.com/Kito-Java2307/Java-SpecialTheme01/assets/141001192/7f3468c7-637d-4aaa-9f71-57b9cefee7a3" width=750px>
 ### ＜URLの構成要素＞
-<img src="https://github.com/Kito-Java2307/Java-SpecialTheme01/assets/141001192/f92e26b7-82b9-4bcc-8c51-9ca9d677847f" width=450px>
+<img src="https://github.com/Kito-Java2307/Java-SpecialTheme01/assets/141001192/f92e26b7-82b9-4bcc-8c51-9ca9d677847f" width=450px><br>
 URLは、スキーム・サブドメイン・トップレベルドメイン・セカンドレベルドメイン・サブディレクトリの5種類の要素で構成されます。
 
-1. スキーム
-<img src="https://github.com/Kito-Java2307/Java-SpecialTheme01/assets/141001192/ac1356aa-8972-417c-b907-96d5aaeba215" width=450px>
+1. スキーム<br>
+<img src="https://github.com/Kito-Java2307/Java-SpecialTheme01/assets/141001192/ac1356aa-8972-417c-b907-96d5aaeba215" width=450px><br>
 スキームは、ブラウザがWebサイトへアクセスするときに使用するプロトコルを表します。
-現在もっとも一般的なスキームは、HTTPS（Hypertext Transfer Protocol Secure）。
-HTTPSを使用することで、ブラウザ上で入力した全ての情報（パスワード、クレジットカード情報など）は暗号化されて、
-通信される。そのため第三者による情報閲覧や改ざんなどを防ぐことができます。
-また、HTTPSの導入はWebサイト訪問者の保護だけでなく、Googleなどの検索エンジンでの検索順位の
-引き上げなど、SEO（Search Engine Optimization）対策にもつながります。
-その他のスキームとしては、FTPプロトコルでファイルを送受信するための「ftp:」、
-コンピュータ内のファイルシステムにアクセスするための「file:」、
-電子メールの送信先を指定する「mailto:」などがあります。
+現在もっとも一般的なスキームは、HTTPS（Hypertext Transfer Protocol Secure）です。HTTPSを使用することで、ブラウザ上で入力した全ての情報（パスワード、クレジットカード情報など）は暗号化されて通信されます。そのため第三者による情報閲覧や改ざんなどを防ぐことができます。<br>
+また、HTTPSの導入はWebサイト訪問者の保護だけでなく、Googleなどの検索エンジンでの検索順位の引き上げなど、SEO（Search Engine Optimization）対策にもつながります。
 
-1. サブドメイン
-<img src="https://github.com/Kito-Java2307/Java-SpecialTheme01/assets/141001192/39807054-7b7a-4a8a-ae7a-95c77189b72a" width=450px>
-サブドメインは、Webサイト内の数あるページの分類を表します。
-例えば、ニュースの記事を掲載しているページであれば「news」、ブログ掲載のページであれば「blog」などです。
-このような分類があることで、Webサイト内の整理ができ、またトップページ以外にもページが存在することを
-検索エンジンGoogleやWebサイトへの訪問者に知らせることもできます。
+1. サブドメイン<br>
+<img src="https://github.com/Kito-Java2307/Java-SpecialTheme01/assets/141001192/39807054-7b7a-4a8a-ae7a-95c77189b72a" width=450px><br>
+サブドメインは、Webサイト内の数あるページの分類を表します。<br>
+例えば、ニュースの記事を掲載しているページであれば「news」、ブログ掲載のページであれば「blog」などです。このような分類があることで、Webサイト内の整理ができ、またトップページ以外にもページが存在することを検索エンジンGoogleやWebサイトへの訪問者に知らせることもできます。
 
-1. セカンドレベルドメイン
-<img src="https://github.com/Kito-Java2307/Java-SpecialTheme01/assets/141001192/30df5784-a676-4de6-b8da-63abe3e549ae" width=450px>
-セカンドレベルドメイン（SLD）は、Webサイト全体の名前を表します。
+1. セカンドレベルドメイン<br>
+<img src="https://github.com/Kito-Java2307/Java-SpecialTheme01/assets/141001192/30df5784-a676-4de6-b8da-63abe3e549ae" width=450px><br>
+セカンドレベルドメイン（SLD）は、Webサイト全体の名前を表します。<br>
 今現在アクセスしているWebサイトは何なのかを把握することができます。
 
-1. トップレベルドメイン
-<img src="https://github.com/Kito-Java2307/Java-SpecialTheme01/assets/141001192/52ff8762-5dea-48c1-815e-e0c7ecb6bdd8" width=450px>
-トップレベルドメイン（TLD）は、インターネット上で登録されている組織の種別を表します。
-トップレベルドメインは大きく分けて、世界中の誰でも登録可能な「汎用トップレベルドメイン（gTLD）」と
-特定の国や地域ごとに割り当てられる「国別トップレベルドメイン（ccTLD）」があります。
+1. トップレベルドメイン<br>
+<img src="https://github.com/Kito-Java2307/Java-SpecialTheme01/assets/141001192/52ff8762-5dea-48c1-815e-e0c7ecb6bdd8" width=450px><br>
+トップレベルドメイン（TLD）は、インターネット上で登録されている組織の種別を表します。<br>
+トップレベルドメインは大きく分けて、世界中の誰でも登録可能な「汎用トップレベルドメイン（gTLD）」と特定の国や地域ごとに割り当てられる「国別トップレベルドメイン（ccTLD）」があります。
 営利団体は「.com」、教育機関は「.edu」、日本の企業を表す「.co.jp」などがあります。
 
-1. サブディレクトリ
-<img src="https://github.com/Kito-Java2307/Java-SpecialTheme01/assets/141001192/2bd7899e-3de0-4a54-9bbc-a8d7d0ff17c3" width=450px>
-サブディレクトリは、サブドメインの中でも特に具体的な種別を表します。
-ニュース掲載ページのオススメという項目なら「newｓ」サブドメインの「pickup」サブディレクトリ、
-オンラインショッピングストアの時計を表示しているページなら「shop」サブドメインの「watch」サブディレクトリという
-ような記載になります。
+1. サブディレクトリ<br>
+<img src="https://github.com/Kito-Java2307/Java-SpecialTheme01/assets/141001192/2bd7899e-3de0-4a54-9bbc-a8d7d0ff17c3" width=450px><br>
+サブディレクトリは、サブドメインの中でも特に具体的な種別を表します。<br>
+ニュース掲載ページのオススメという項目なら「newｓ」サブドメインの「pickup」サブディレクトリ、オンラインショッピングストアの時計を表示しているページなら「shop」サブドメインの「watch」サブディレクトリというような記載になります。
 
 # **クエリ文字列とパスパラメーター**
 ### ＜クエリ文字とは＞
-クエリ文字列（URLパラメーター）は、サーバに情報を送るためにURLの末尾に付け足す文字列（変数）のことです。
-URLの末尾に「?」、その後に「パラメーター=値」を記載します。
-複数のパラメータを付ける場合、2個目のパラメーターから「?」の部分を「&」にして記述します。
+クエリ文字列（URLパラメーター）は、サーバに情報を送るためにURLの末尾に付け足す文字列（変数）のことです。<br>
+URLの末尾に「?」、その後に「パラメーター=値」を記載します。複数のパラメータを付ける場合、2個目のパラメーターから「?」の部分を「&」にして記述します。
 
 ### ＜2種類のクエリ文字列（URLパラメーター）＞
 クエリ文字列には「パッシブパラメーター」と「アクティブパラメーター」があります。
-1. パッシブパラメーター（Webサイトのアクセス解析）
-<img src="https://github.com/Kito-Java2307/Java-SpecialTheme01/assets/141001192/6d44a97a-04cd-47e3-8708-9d97ec68b059" width=450px>
+1. パッシブパラメーター（Webサイトのアクセス解析）<br>
+<img src="https://github.com/Kito-Java2307/Java-SpecialTheme01/assets/141001192/6d44a97a-04cd-47e3-8708-9d97ec68b059" width=450px><br>
 Ex）GoogleからWebサイトへのアクセスを計測
 パッシブパラメーターは、Webサイトへのアクセス解析をするためのものです。このパラメーターが付いていてもいなくても表示されるページ内容は同じで、コンテンツには影響しません。
-パッシブパラメーターを付けることで、ユーザがどこからWebサイトへたどり着いたのかを計測します。一般的に、集客のためにWebサイトへの流入元の分析や、リスティング広告からの流入情報を知りたい時などに使われます。
+パッシブパラメーターを付けることで、ユーザがどこからWebサイトへたどり着いたのかを計測します。一般的に、集客のためにWebサイトへの流入元の分析や、リスティング広告からの流入情報を知りたい時などに使われます。<br>
 ※リスティング広告・・・検索連動型広告。検索エンジンでユーザが検索したキーワードに関連した広告を検索結果画面に表示する広告です。
 
-1. アクティブパラメーター（動的なページ結果の表示）
-<img src="https://github.com/Kito-Java2307/Java-SpecialTheme01/assets/141001192/56deeecb-f767-4546-9a7b-ee6e46c0bd45" width=450px>
+1. アクティブパラメーター（動的なページ結果の表示）<br>
+<img src="https://github.com/Kito-Java2307/Java-SpecialTheme01/assets/141001192/56deeecb-f767-4546-9a7b-ee6e46c0bd45" width=450px><br>
 Ex）「大谷」というキーワードでフィルタリング
 アクティブパラメーターは、付与することでWebサイトの表示内容を変更します。
 ショッピングサイトの場合、商品一覧をサイズごとにフィルタリングしたり、価格順に並び替えたりすることができます。
 
 ### ＜パスパラメーター（パス変数）とは＞
-パスパラメーターは、URLの階層構造に含まれ、特定のWeb画面を表示するときに使用するパラメーター（変数）です。
-<img src="https://github.com/Kito-Java2307/Java-SpecialTheme01/assets/141001192/c4268cb3-c96e-41b4-8439-f7d331b530d5" width=450px>
+パスパラメーターは、URLの階層構造に含まれ、特定のWeb画面を表示するときに使用するパラメーター（変数）です。<br>
+<img src="https://github.com/Kito-Java2307/Java-SpecialTheme01/assets/141001192/c4268cb3-c96e-41b4-8439-f7d331b530d5" width=450px><br>
 あるアニメ会社のWebサイトがあり、「sales」というパラメーターを記述することで、
 営業部の社員一覧ページという特定の画面を表示することができます。
 
